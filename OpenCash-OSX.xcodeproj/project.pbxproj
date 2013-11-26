@@ -75,11 +75,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76886E581845225C0023BD7D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				76EF6DC518438C1B00A15AD4 /* OCADocument.h */,
+				76EF6DC618438C1B00A15AD4 /* OCADocument.m */,
+				76EF6DC818438C1B00A15AD4 /* OCADocument.xib */,
+				76EF6DCB18438C1B00A15AD4 /* MainMenu.xib */,
+				76EF6DCE18438C1B00A15AD4 /* Images.xcassets */,
+				76886E59184522710023BD7D /* Supporting Files */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		76886E59184522710023BD7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76EF6DBB18438C1B00A15AD4 /* OpenCash-OSX-Info.plist */,
+				76EF6DBF18438C1B00A15AD4 /* main.m */,
+				76EF6DC118438C1B00A15AD4 /* OpenCash-OSX-Prefix.pch */,
+				76EF6DBC18438C1B00A15AD4 /* InfoPlist.strings */,
+				76EF6DC218438C1B00A15AD4 /* Credits.rtf */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		76EF6DA718438C1B00A15AD4 = {
 			isa = PBXGroup;
 			children = (
-				76EF6DB918438C1B00A15AD4 /* OpenCash-OSX */,
-				76EF6DDA18438C1B00A15AD4 /* OpenCash-OSXTests */,
+				76886E581845225C0023BD7D /* Sources */,
+				76EF6DDA18438C1B00A15AD4 /* Tests */,
 				76EF6DB218438C1B00A15AD4 /* Frameworks */,
 				76EF6DB118438C1B00A15AD4 /* Products */,
 			);
@@ -114,38 +139,13 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		76EF6DB918438C1B00A15AD4 /* OpenCash-OSX */ = {
-			isa = PBXGroup;
-			children = (
-				76EF6DC518438C1B00A15AD4 /* OCADocument.h */,
-				76EF6DC618438C1B00A15AD4 /* OCADocument.m */,
-				76EF6DC818438C1B00A15AD4 /* OCADocument.xib */,
-				76EF6DCB18438C1B00A15AD4 /* MainMenu.xib */,
-				76EF6DCE18438C1B00A15AD4 /* Images.xcassets */,
-				76EF6DBA18438C1B00A15AD4 /* Supporting Files */,
-			);
-			path = "OpenCash-OSX";
-			sourceTree = "<group>";
-		};
-		76EF6DBA18438C1B00A15AD4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				76EF6DBB18438C1B00A15AD4 /* OpenCash-OSX-Info.plist */,
-				76EF6DBC18438C1B00A15AD4 /* InfoPlist.strings */,
-				76EF6DBF18438C1B00A15AD4 /* main.m */,
-				76EF6DC118438C1B00A15AD4 /* OpenCash-OSX-Prefix.pch */,
-				76EF6DC218438C1B00A15AD4 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		76EF6DDA18438C1B00A15AD4 /* OpenCash-OSXTests */ = {
+		76EF6DDA18438C1B00A15AD4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				76EF6DE018438C1B00A15AD4 /* OpenCash_OSXTests.m */,
 				76EF6DDB18438C1B00A15AD4 /* Supporting Files */,
 			);
-			path = "OpenCash-OSXTests";
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		76EF6DDB18438C1B00A15AD4 /* Supporting Files */ = {
@@ -154,7 +154,7 @@
 				76EF6DDC18438C1B00A15AD4 /* OpenCash-OSXTests-Info.plist */,
 				76EF6DDD18438C1B00A15AD4 /* InfoPlist.strings */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +477,7 @@
 				76EF6DE618438C1B00A15AD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76EF6DE718438C1B00A15AD4 /* Build configuration list for PBXNativeTarget "OpenCash-OSXTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +486,7 @@
 				76EF6DE918438C1B00A15AD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

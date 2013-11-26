@@ -19,6 +19,8 @@
 		76EF6DD718438C1B00A15AD4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EF6DB318438C1B00A15AD4 /* Cocoa.framework */; };
 		76EF6DDF18438C1B00A15AD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76EF6DDD18438C1B00A15AD4 /* InfoPlist.strings */; };
 		76EF6DE118438C1B00A15AD4 /* OpenCash_OSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EF6DE018438C1B00A15AD4 /* OpenCash_OSXTests.m */; };
+		76EFAEEF184528D800F86487 /* OpenCash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EFAEEE184528D800F86487 /* OpenCash.framework */; };
+		76EFAEF2184553EA00F86487 /* OpenCash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EFAEEE184528D800F86487 /* OpenCash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		76EF6DDC18438C1B00A15AD4 /* OpenCash-OSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenCash-OSXTests-Info.plist"; sourceTree = "<group>"; };
 		76EF6DDE18438C1B00A15AD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		76EF6DE018438C1B00A15AD4 /* OpenCash_OSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCash_OSXTests.m; sourceTree = "<group>"; };
+		76EFAEEE184528D800F86487 /* OpenCash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCash.framework; path = "../../../../Library/Developer/Xcode/DerivedData/OpenCash-cfrowjiurnufkibcktlhntmfcspw/Build/Products/Debug/OpenCash.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76EFAEF2184553EA00F86487 /* OpenCash.framework in Frameworks */,
 				76EF6DB418438C1B00A15AD4 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76EFAEEF184528D800F86487 /* OpenCash.framework in Frameworks */,
 				76EF6DD718438C1B00A15AD4 /* Cocoa.framework in Frameworks */,
 				76EF6DD618438C1B00A15AD4 /* XCTest.framework in Frameworks */,
 			);
@@ -122,6 +127,7 @@
 		76EF6DB218438C1B00A15AD4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76EFAEEE184528D800F86487 /* OpenCash.framework */,
 				76EF6DB318438C1B00A15AD4 /* Cocoa.framework */,
 				76EF6DD518438C1B00A15AD4 /* XCTest.framework */,
 				76EF6DB518438C1B00A15AD4 /* Other Frameworks */,
@@ -397,6 +403,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCash-cfrowjiurnufkibcktlhntmfcspw/Build/Products/Debug",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sources/Supporting Files/OpenCash-OSX-Prefix.pch";
 				INFOPLIST_FILE = "Sources/Supporting Files/OpenCash-OSX-Info.plist";
@@ -410,6 +420,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCash-cfrowjiurnufkibcktlhntmfcspw/Build/Products/Debug",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sources/Supporting Files/OpenCash-OSX-Prefix.pch";
 				INFOPLIST_FILE = "Sources/Supporting Files/OpenCash-OSX-Info.plist";
@@ -426,6 +440,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCash-cfrowjiurnufkibcktlhntmfcspw/Build/Products/Debug",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sources/Supporting Files/OpenCash-OSX-Prefix.pch";
@@ -448,6 +463,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCash-cfrowjiurnufkibcktlhntmfcspw/Build/Products/Debug",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sources/Supporting Files/OpenCash-OSX-Prefix.pch";

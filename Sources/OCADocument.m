@@ -7,8 +7,17 @@
 //
 
 #import "OCADocument.h"
+#import <OpenCash/OpenCash.h>
+
+@interface OCADocument ()
+
+@property (weak) IBOutlet NSTextField *textField;
+
+@end
 
 @implementation OCADocument
+
+@synthesize textField;
 
 - (id)init
 {
@@ -54,6 +63,10 @@
   NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
   @throw exception;
   return YES;
+}
+
+- (IBAction)makeTheMagic:(id)sender {
+  [self.textField setStringValue:[OCAAccount getString]];
 }
 
 @end

@@ -66,7 +66,12 @@
 }
 
 - (IBAction)makeTheMagic:(id)sender {
-  [self.textField setStringValue:[OCAAccount getString]];
+  OCADocumentController *doc = [[OCADocumentController alloc]
+                                initWithFilename:@":memory:"
+                                shouldInitialize:YES];
+  OCAAccount *acc = [doc newAccount];
+  acc.name = @"account 1";
+  [self.textField setStringValue:acc.name];
 }
 
 @end

@@ -21,11 +21,11 @@
 
 - (id)init
 {
-    self = [super init];
-    if (self) {
+  self = [super init];
+  if (self) {
     // Add your subclass-specific initialization here.
-    }
-    return self;
+  }
+  return self;
 }
 
 - (NSString *)windowNibName
@@ -43,7 +43,7 @@
 
 + (BOOL)autosavesInPlace
 {
-    return YES;
+  return YES;
 }
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
